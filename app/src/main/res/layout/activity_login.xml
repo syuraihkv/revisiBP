@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_home_cleaning"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewLogo2"
+        android:text="Log In"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:background="@drawable/custom_login_bg"
+        android:hint="Username"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editTextUsername"
+        android:background="@drawable/custom_login_bg"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/editTextPassword"
+        android:backgroundTint="#FF9800" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_prompt"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="end"
+        android:textColor="@color/white"
+        android:layout_below="@id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/textViewRegisterPrompt"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="@string/register_prompt" />
+
+
+</RelativeLayout>

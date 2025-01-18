@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.uasbro.BerandaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/silver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+        <ImageView
+            android:id="@+id/imageBeranda"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/baseline_home_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageOrder"/>
+
+        <ImageView
+            android:id="@+id/imageOrder"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/outline_shopping_cart_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageBeranda"
+            app:layout_constraintEnd_toStartOf="@id/imagePaket"/>
+
+        <ImageView
+            android:id="@+id/imagePaket"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/baseline_paket_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageOrder"
+            app:layout_constraintEnd_toStartOf="@id/imagePrepaid"/>
+
+        <ImageView
+            android:id="@+id/imagePrepaid"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/baseline_prepaid_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imagePaket"
+            app:layout_constraintEnd_toStartOf="@id/imageAkun"/>
+
+        <ImageView
+            android:id="@+id/imageAkun"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/outline_account_circle_24"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imagePrepaid"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
