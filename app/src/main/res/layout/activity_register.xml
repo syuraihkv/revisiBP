@@ -29,13 +29,27 @@
         android:textColor="@color/black"
         android:layout_below="@id/imageViewLogo"
         android:layout_centerHorizontal="true"
-        android:text="Register" />
+        android:text="Create Account" />
+
+    <TextView
+        android:id="@+id/textViewRegister2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewRegister"
+        android:layout_centerHorizontal="true"
+        android:text="Let's Create Account Together" />
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@+id/textViewRegister"
+        android:layout_below="@+id/textViewRegister2"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="30dp"
